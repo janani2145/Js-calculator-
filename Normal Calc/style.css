@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+    min-height:100vh;
+    max-width: 100%;
+    font-family: Arial,sans-serif;
+    background: #232526;
+    background: -webkit-linear-gradient(to right, #414345, #232526); 
+    background: linear-gradient(to right, #414345, #232526); 
+    background-image: url(stationery-with-apple-calculator-blackboard_23-2148199923.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left :150px;
+}
+h1{margin:10px;
+    color: #fff;
+    text-align: center;
+    font-size:45px;
+    font-weight: 700;
+    background: -webkit-linear-gradient(yellow, orangered);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+#calculator{
+    font-family: Arial,sans-serif;
+    border-radius:15px;
+    box-shadow: 0 0 15px #000;
+    border: 2px solid rgb(116,114,114);
+}
+input::placeholder{
+color:white;
+}
+
+#display{
+    width:280px;
+    font-size:3rem;
+    padding:10px;
+    margin:10px;
+    border-radius:10px;
+    text-align: end;
+    color:white;
+    background:transparent;
+    box-shadow: inset 5px 5px 12px #111010;
+    border: none;
+ 
+}
+#keys{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    
+}
+button{
+    width:60px;
+    height:60px;
+    margin:10px;
+    margin:5px;
+    border-radius:50px;
+    border:none;
+    background:transparent;
+    color:white;
+    font-size: 1.5rem;
+    font-weight: 800;
+    box-shadow: -5px -6px 15px #000;
+    outline:1px solid #313131;
+    outline-offset: 3px;
+    cursor: pointer;
+}
+.operator{
+background-color: rgb(224, 67, 10);
+}
+.equal{
+    background-color:orangered;
+}
+button:active{
+    background: black;
+    transform:translate(2px,2px);
+}
+
+
